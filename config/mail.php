@@ -93,7 +93,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'recepcionbancodav@factura1.com.co'),
-        'name' => env('MAIL_FROM_NAME', 'Factura 1'),
+        'name' => env('MAIL_FROM_NAME', 'Inteligencia Artificial'),
     ],
 
     /*

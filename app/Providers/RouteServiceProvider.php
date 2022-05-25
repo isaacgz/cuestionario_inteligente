@@ -59,11 +59,6 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(function(){
                     require base_path('routes/web/web.php');
                     require base_path('routes/web/auth.php');
-                    require base_path('routes/web/preguntas.php');
-                    require base_path('routes/web/massive_invoice.php');
-                    require base_path('routes/web/pendings_invoice.php');
-                    require base_path('routes/web/generated_invoice.php');
-                    require base_path('routes/web/request_invoice.php');
                     require base_path('routes/web/system.php');
                 });
     }

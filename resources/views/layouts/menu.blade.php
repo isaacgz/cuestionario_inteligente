@@ -53,8 +53,8 @@
                 </div>
             @endcan                                 
             @can('Ver_Sistema')                            
-                <div data-kt-menu-trigger="click" class="{{ request()->is('doctype*') || request()->is('users*') || request()->is('roles*') || request()->is('permissions*') || request()->is('resolutions*') || request()->is('log*') ? 'menu-item here show menu-accordion' : 'menu-item menu-accordion' }}">
-                    <span class="{{ request()->is('doctype*') || request()->is('users*') || request()->is('roles*') || request()->is('permissions*') || request()->is('resolutions*') || request()->is('log*') ? 'menu-link active' : 'menu-link' }}">
+                <div data-kt-menu-trigger="click" class="{{ request()->is('animal*') || request()->is('users*') || request()->is('roles*') || request()->is('permissions*') || request()->is('atributo*') || request()->is('log*') ? 'menu-item here show menu-accordion' : 'menu-item menu-accordion' }}">
+                    <span class="{{ request()->is('animal*') || request()->is('users*') || request()->is('roles*') || request()->is('permissions*') || request()->is('atributo*') || request()->is('log*') ? 'menu-link active' : 'menu-link' }}">
                         <span class="menu-icon">
                             <span class="svg-icon svg-icon-2"> 
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -71,7 +71,7 @@
                         <span class="menu-arrow"></span>
                     </span>
                     <div class="menu-sub menu-sub-accordion menu-active-bg">
-                        <div data-kt-menu-trigger="click" class="{{ request()->is('doctype*') || request()->is('users*') || request()->is('roles*') || request()->is('permissions*') || request()->is('society*') ? 'menu-item menu-accordion here show menu-accordion' : 'menu-item menu-accordion' }}">
+                        <div data-kt-menu-trigger="click" class="{{ request()->is('animal*') || request()->is('users*') || request()->is('roles*') || request()->is('permissions*') || request()->is('atributo*') ? 'menu-item menu-accordion here show menu-accordion' : 'menu-item menu-accordion' }}">
                             <span class="menu-link">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
@@ -97,27 +97,19 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="{{ request()->is('preguntas*') ? 'menu-link active py-3' : 'menu-link py-3' }}" href="{{ route("pregunta.index") }}">
+                                    <a class="{{ request()->is('animal*') ? 'menu-link active py-3' : 'menu-link py-3' }}" href="{{ route("animal.index") }}">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
-                                        <span class="menu-title">Preguntas</span>
+                                        <span class="menu-title">Animales</span>
                                     </a>
-                                </div>
+                                </div>                                
                                 <div class="menu-item">
-                                    <a class="{{ request()->is('pos*') ? 'menu-link active py-3' : 'menu-link py-3' }}" href="{{ route("pos.index") }}">
+                                    <a class="{{ request()->is('atributo*') ? 'menu-link active py-3' : 'menu-link py-3' }}" href="{{ route("atributo.index") }}">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
-                                        <span class="menu-title">Puntos de Venta</span>
-                                    </a>
-                                </div>
-                                <div class="menu-item">
-                                    <a class="{{ request()->is('doctype*') ? 'menu-link active py-3' : 'menu-link py-3' }}" href="{{ route("doctype.index") }}">
-                                        <span class="menu-bullet">
-                                            <span class="bullet bullet-dot"></span>
-                                        </span>
-                                        <span class="menu-title">Tipos de Documentos</span>
+                                        <span class="menu-title">Atributos</span>
                                     </a>
                                 </div>
                             </div>

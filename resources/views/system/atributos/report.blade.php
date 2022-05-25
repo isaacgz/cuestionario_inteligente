@@ -12,7 +12,7 @@
         <!--begin::Page title-->
         <div data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}" class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
             <!--begin::Title-->
-            <h1 class="d-flex align-items-center text-dark fw-bolder fs-3 my-1">Preguntas</h1>
+            <h1 class="d-flex align-items-center text-dark fw-bolder fs-3 my-1">Atributos</h1>
             <!--end::Title-->
             <!--begin::Separator-->
             <span class="h-20px border-gray-200 border-start mx-4"></span>
@@ -46,7 +46,7 @@
                 </li> 
                 <!--begin::Item-->
                 <li class="breadcrumb-item text-muted">
-                    <li class="breadcrumb-item text-muted">Preguntas</li>
+                    <li class="breadcrumb-item text-muted">Atributos</li>
                 </li>
                 <!--end::Item-->
             </ul>
@@ -76,11 +76,11 @@
                                 </g>
                             </svg><!--end::Svg Icon--></span>
                         </span>                        
-                        <h3 class="card-label">Reporte General - Preguntas</h3>
+                        <h3 class="card-label">Reporte General - Atributos</h3>
                     </div>
                     <div class="card-toolbar">
                         <!--begin::Button-->
-                        <button class="btn btn-primary er fs-6 px-8 py-4" data-bs-toggle="modal" data-bs-target="#kt_modal_new_pregunta">
+                        <button class="btn btn-primary er fs-6 px-8 py-4" data-bs-toggle="modal" data-bs-target="#kt_modal_new_atributo">
                             <span class="svg-icon svg-icon-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -92,8 +92,8 @@
                         </button>
                         <!--end::Button-->
                         <!--begin::Modal-->
-                        @include('system.preguntas.modal_add')
-                        @include('system.preguntas.modal_edit') 
+                        @include('system.atributos.modal_add')
+                        @include('system.atributos.modal_edit') 
                         <!--end::Modal-->
                     </div>
                 </div>
@@ -101,11 +101,11 @@
             <!--end::Card header-->
             <!--begin::Card body-->
             <div class="card-body pt-6">
-                <table id="kt_datatable_pregunta" class="table align-middle table-row-dashed fs-7 gy-3">
+                <table id="kt_datatable_atributos" class="table align-middle table-row-dashed fs-7 gy-3">
                     <thead>
                         <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
                             <th>id</th>
-                            <th>Pregunta</th>
+                            <th>Nombre</th>
                             <th>Estatus</th>
                             <th class="min-w-100px">Acciones</th>
                         </tr>
@@ -124,9 +124,9 @@
 
 @section('scripts')
 <script src="{{ asset('assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>    
-<script src="{{ asset('assets/js/system/preguntas/crud_preguntas.js')}}"></script>
-<script src="{{ asset('assets/js/system/preguntas/crud_preguntas_datatable.js')}}"></script>
+<script src="{{ asset('assets/js/system/atributos/crud_atributos.js')}}"></script>
+<script src="{{ asset('assets/js/system/atributos/crud_atributos_datatable.js')}}"></script>
 <script>
-    window.onload = get_pregunta;    
+    window.onload = get_atributo;    
 </script>
 @endsection

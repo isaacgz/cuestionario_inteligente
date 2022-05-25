@@ -36,7 +36,7 @@
 							</a>
 							<!--end::Logo-->
 							<!--begin::Title-->
-							<h1 class="fw-bolder fs-2qx pb-5 pb-md-10" style="color: #F8D800;">Bienvenido a tu sistema de facturaci&oacute;n</h1>
+							<h1 class="fw-bolder fs-2qx pb-5 pb-md-10" style="color: #F8D800;">Bienvenido a tu sistema de cuestionario inteligente</h1>
 							<!--end::Title-->
 							<!--begin::Description-->
 							<p class="fw-bold fs-2" style="color: #F8D800;">Encuentra el animal que buscas							
@@ -60,11 +60,6 @@
 									<!--begin::Title-->
 									<h1 class="text-dark mb-3">Inicia Sesión</h1>
 									<!--end::Title-->
-									<!--begin::Link-->
-									<div class="text-gray-400 fw-bold fs-4">¿Eres nuevo aquí?
-										<a href="{{route('register')}}" class="link-primary fw-bolder">Crea tu cuenta</a>
-									</div>
-									<!--end::Link-->
 									<div class="al_inf alert alert-warning alert-dismissible fade show with-icon animate__animated" role="alert">
 										Por favor completa la siguiente información
 									</div>

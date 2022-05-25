@@ -35,18 +35,6 @@ class RegisterController extends Controller
                 $id_role = 2;
                 $active = 1;
 
-                //Enviar correo                                
-                $client = new PostmarkClient("b9f2a870-9db9-47b2-bb4d-419282eb8065");                
-
-                $res = $client->sendEmailWithTemplate(
-                    "recepcionbancodav@factura1.com.co",
-                    $email,
-                    27709525,
-                    array(
-                        'usuario'       => $email, 
-                        'url_inicio'    => $url_Portal
-                    )
-                );
         
                 $model = new User();
                     $model -> id_role = $id_role;

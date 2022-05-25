@@ -1,11 +1,11 @@
 <?php
 
-use App\Http\Controllers\System\DocTypeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\System\AnimalController;
+use App\Http\Controllers\System\AtributosController;
 use App\Http\Controllers\System\LogController;
 use App\Http\Controllers\System\RoleController;
 use App\Http\Controllers\System\UserController;
-use App\Http\Controllers\System\TaxDataController;
  
  Route::group(['middleware' => 'auth'], function () {
 
@@ -26,14 +26,10 @@ use App\Http\Controllers\System\TaxDataController;
     Route::resource('/resolution', RoleController::class);
     Route::Post('/resolution/getResolutions', [RoleController::class, 'getResolutions'])->name('resolution.getResolutions');
 
-    Route::resource('/pos', RoleController::class);
-    Route::Post('/pos/getPos', [RoleController::class, 'getPos'])->name('pos.getPos');
+    Route::resource('/animal', AnimalController::class);
+    Route::Post('/animal/getAnimales', [AnimalController::class, 'getAnimales'])->name('animales.getAnimales');
     
-    Route::resource('/doctype', DocTypeController::class);
-    Route::Post('/doctype/getDoctype', [DocTypeController::class, 'getDoctype'])->name('doctype.getDoctype');
-
-    Route::resource('/TaxData', TaxDataController::class);
-    Route::Post('/TaxData/getTaxData', [TaxDataController::class, 'getTaxData'])->name('taxdata.getTaxData');
-    
+    Route::resource('/atributo', AtributosController::class);
+    Route::Post('/atributo/getAtributos', [AtributosController::class, 'getAtributos'])->name('atributo.getAtributos');
 
 });

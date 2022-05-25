@@ -1,5 +1,5 @@
-<!--begin::Modal - edit doctype-->
-<div class="modal fade" id="kt_modal_edit_doc_type" tabindex="-1" aria-hidden="true">
+<!--begin::Modal - Add animal-->
+<div class="modal fade" id="kt_modal_new_animal" tabindex="-1" aria-hidden="true">
     <!--begin::Modal dialog-->
     <div class="modal-dialog modal-dialog-centered mw-750px">
         <!--begin::Modal content-->
@@ -7,10 +7,10 @@
             <!--begin::Modal header-->
             <div class="modal-header">
                 <!--begin::Modal title-->
-                <h2 class="fw-bolder">Editar tipo de Documento</h2>
+                <h2 class="fw-bolder">Agregar animal</h2>
                 <!--end::Modal title-->
                 <!--begin::Close-->
-                <div class="btn btn-icon btn-sm btn-active-icon-primary" data-kt-doctype-modal-action="close">
+                <div class="btn btn-icon btn-sm btn-active-icon-primary" data-kt-animal-modal-action="close">
                     <!--begin::Svg Icon | path: icons/duotone/Navigation/Close.svg-->
                     <span class="svg-icon svg-icon-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -26,20 +26,20 @@
             </div>
             <!--end::Modal header-->
             <!--begin::Modal body-->
-            <div class="modal-body scroll-y mx-lg-5 my-7" id="kt_edit_doctype">
+            <div class="modal-body scroll-y mx-lg-5 my-7" id="kt_add_animal">
                 <!--begin::Form-->
-                <form id="kt_modal_edit_doctype_form" class="form" action="#">
+                <form id="kt_modal_add_animal_form" class="form" action="#">
                     <!--begin::Scroll-->
-                    <div class="d-flex flex-column scroll-y me-n7 pe-7" id="kt_modal_edit_doctype_scroll" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-max-height="auto" data-kt-scroll-dependencies="#kt_modal_edit_doctype_header" data-kt-scroll-wrappers="#kt_modal_edit_doctype_scroll" data-kt-scroll-offset="300px">
+                    <div class="d-flex flex-column scroll-y me-n7 pe-7" id="kt_modal_add_animal_scroll" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-max-height="auto" data-kt-scroll-dependencies="#kt_modal_add_animal_header" data-kt-scroll-wrappers="#kt_modal_add_animal_scroll" data-kt-scroll-offset="300px">
                         <!--begin::Input group-->
                         <div class="fv-row mb-10">
                             <!--begin::Label-->
                             <label class="fs-5 fw-bolder form-label mb-2">
-                                <span class="required">Nombre del tipo de documento</span>
+                                <span class="required">Animal</span>
                             </label>
                             <!--end::Label-->
                             <!--begin::Input-->
-                            <input id="name_doc_edit" class="form-control form-control-solid" placeholder="Ingresa el nombre del documento" name="name" />                            
+                            <input id="text_add" class="form-control form-control-solid" placeholder="Ingresa tu animal" name="text_add" />
                             <!--end::Input-->
                         </div>
                         <!--end::Input group-->
@@ -49,7 +49,7 @@
                                 <div class="fs-7 fw-bold text-muted">Deslice para activar y desactivar:</div>
                             </div>
                             <label class="form-check form-switch form-check-custom form-check-solid">
-                                <input name="active" id="active_doc_edit" class="form-check-input" type="checkbox" value="1" checked="checked" />
+                                <input name="active" id="active_add" class="form-check-input" type="checkbox" value="1" checked="checked" />
                                 <span class="form-check-label fw-bold text-muted">Activo</span>
                             </label>
                         </div>
@@ -57,14 +57,13 @@
                     <!--end::Scroll-->
                     <!--begin::Actions-->
                     <div class="text-center pt-15">
-                        <button type="reset" id="btn_modal_doctype_edit_cls" data-bs-dismiss="modal" class="btn btn-light me-3">Cerrar</button>
-                        <button type="button" class="btn btn-primary"onclick="validate_doctype_edit(event)" id="btn_modal_doctype_edit">
-                            <span class="spinner-border spinner-border-sm visually-hidden" id="spi_modal_doctype_edit" role="status" aria-hidden="true"></span>
+                        <button type="reset" id="btn_modal_animal_cls" data-bs-dismiss="modal" class="btn btn-light me-3">Cerrar</button>
+                        <button type="button" class="btn btn-primary"onclick="validate_animal_add(event)" id="btn_modal_animal_add">
+                            <span class="spinner-border spinner-border-sm visually-hidden" id="spi_modal_animal_add" role="status" aria-hidden="true"></span>
                             <span class="indicator-label">Guardar</span>
                         </button>
                     </div>
                     <!--end::Actions-->
-                    <input type="hidden" id="id_doctype_edit">
                 </form>
                 <!--end::Form-->
             </div>
@@ -74,4 +73,4 @@
     </div>
     <!--end::Modal dialog-->
 </div>
-<!--end::Modal - edit doctype-->
+<!--end::Modal - Add animal-->

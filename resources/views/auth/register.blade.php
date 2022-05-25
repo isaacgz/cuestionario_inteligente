@@ -4,7 +4,7 @@
 	<head><base href="">
 		<title>Factura Cruz Verde</title>
 		<meta name="csrf-token" content="{{ csrf_token() }}">
-		<meta name="description" content="Factura 1" />
+		<meta name="description" content="Inteligencia Artificial" />
 		<meta name="keywords" content="Factura1, cruz, verde, factura, cruzverde" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta charset="utf-8" />
